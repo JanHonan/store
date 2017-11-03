@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project>
-	<proj ListSeperator="," DefaultDurationUnits="days" DefaultWorkUnits="hours" HoursPerDay="8" HoursPerWeek="40" DaysPerMonth="22" DefaultStartTime="08:00" DefaultFinishTime="17:00" NADate="">
+	<proj ListSeperator="," DefaultDurationUnits="days" DefaultWorkUnits="hours" HoursPerDay="1" HoursPerWeek="7" DaysPerMonth="30" DefaultStartTime="22:00" DefaultFinishTime="23:00" NADate="">
 		<calendar>
 			<normalhours s1="08:00" f1="12:00" s2="13:00" f2="17:00"/>
 			<dow day="sun" working="no"/>
@@ -13,8 +13,8 @@
 			<dow day="sat" working="no"/>
 		</calendar>
 		<currency symbol="&#163;&#164;" digits="2" positiveOrder="0" negativeOrder="2"/>
-		<summary ScheduleFromStart="yes" CalculateCostProgress="no" MultipleCriticalPaths="no" CriticalSlack="0d" Name="&#208;&#232;&#199;&#243;&#185;&#164;&#179;&#204;&#188;&#198;&#187;&#174;&#184;&#202;&#204;&#216;&#205;&#188;.mpp" Title="&#208;&#232;&#199;&#243;&#185;&#164;&#179;&#204;&#188;&#198;&#187;&#174;WBS" Work="-0.0167h" Duration="1d" Start="2017-10-30T08:00" Finish="2017-10-30T17:00"/>
-		<DataSource path="C:\Users\&#206;&#194;&#193;&#185;\Desktop\&#208;&#232;&#199;&#243;&#185;&#164;&#179;&#204;&#188;&#198;&#187;&#174;&#184;&#202;&#204;&#216;&#205;&#188;.mpp" type="14.0"/>
+		<summary ScheduleFromStart="yes" CalculateCostProgress="no" MultipleCriticalPaths="no" CriticalSlack="0d" Name="&#208;&#232;&#199;&#243;&#185;&#164;&#179;&#204;&#188;&#198;&#187;&#174;&#184;&#202;&#204;&#216;&#205;&#188;" Title="&#208;&#232;&#199;&#243;&#185;&#164;&#179;&#204;&#188;&#198;&#187;&#174;WBS" Work="-0.0167h" Duration="119d" Start="2017-10-30T08:00" Finish="2018-01-21T23:00"/>
+		<DataSource path="D:\3homework\PRD\&#185;&#171;&#185;&#178;&#178;&#214;&#191;&#226;\G2\&#200;&#237;&#188;&#254;&#185;&#164;&#179;&#204;&#207;&#181;&#193;&#208;&#191;&#206;&#179;&#204;&#189;&#204;&#209;&#167;&#184;&#168;&#214;&#250;&#205;&#248;&#213;&#190;\&#183;&#199;&#202;&#220;&#191;&#216;&#206;&#196;&#181;&#181;\&#206;&#194;&#214;&#208;&#192;&#218;\&#208;&#232;&#199;&#243;&#185;&#164;&#179;&#204;&#188;&#198;&#187;&#174;&#184;&#202;&#204;&#216;&#205;&#188;.mpp" type="14.0"/>
 	</proj>
 	<printInfo mode="scale" orient="landscape" pagesWide="1" pagesHigh="1" scale="100%" bw="no" enlarge="no" byColumn="no" adjustPageBreaks="no" marginTop="36pt" marginLeft="36pt" marginBottom="36pt" marginRight="36pt"/>
 	<pageLayouts>
