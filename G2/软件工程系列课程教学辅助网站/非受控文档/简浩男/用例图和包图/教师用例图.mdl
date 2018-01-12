@@ -248,12 +248,7 @@
 			quid       	"5A2820D3019D"
 			stereotype 	"extend"
 			supplier   	"Use Case View::浏览个人中心"
-			quidu      	"5A281EB40120")
-		    (object Dependency_Relationship
-			quid       	"5A558A5601DC"
-			stereotype 	"extend"
-			supplier   	"Use Case View::查看课程"
-			quidu      	"5A4742B400A4")))
+			quidu      	"5A281EB40120")))
 	    (object UseCase "修改个人资料"
 		quid       	"5A28212D00EE"
 		visible_modules 	(list dependency_list
@@ -261,7 +256,12 @@
 			quid       	"5A282135029D"
 			stereotype 	"extend"
 			supplier   	"Use Case View::查看个人资料"
-			quidu      	"5A28204500BB")))
+			quidu      	"5A28204500BB")
+		    (object Dependency_Relationship
+			quid       	"5A58F9280150"
+			stereotype 	"extend"
+			supplier   	"Use Case View::查看教师介绍"
+			quidu      	"5A58F8940336")))
 	    (object UseCase "修改密码"
 		quid       	"5A28215603CA"
 		visible_modules 	(list dependency_list
@@ -535,6 +535,14 @@
 			stereotype 	"extend"
 			supplier   	"Use Case View::浏览我的论坛"
 			quidu      	"5A21383C037F")))
+	    (object UseCase "查看教师介绍"
+		quid       	"5A58F8940336"
+		visible_modules 	(list dependency_list
+		    (object Dependency_Relationship
+			quid       	"5A58F8AA022A"
+			stereotype 	"extend"
+			supplier   	"Use Case View::查看我的课程"
+			quidu      	"5A21352901C4")))
 	    (object Association "$UNNAMED$0"
 		quid       	"5A0B19A801B2"
 		roles      	(list role_list
@@ -1362,7 +1370,7 @@
 			quidu      	"5A213C0D0389"
 			height     	118)
 		    (object UseCaseView "Use Case View::查看个人资料" @34
-			location   	(3264, 1136)
+			location   	(3200, 1040)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1374,7 +1382,7 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@34
-			    location   	(3264, 1274)
+			    location   	(3200, 1178)
 			    anchor_loc 	1
 			    nlines     	2
 			    max_width  	630
@@ -1386,7 +1394,7 @@
 			quidu      	"5A28204500BB"
 			height     	118)
 		    (object UseCaseView "Use Case View::修改个人资料" @35
-			location   	(3792, 800)
+			location   	(3536, 624)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1398,7 +1406,7 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@35
-			    location   	(3792, 938)
+			    location   	(3536, 762)
 			    anchor_loc 	1
 			    nlines     	2
 			    max_width  	630
@@ -1421,7 +1429,7 @@
 			    default_color 	TRUE)
 			stereotype 	(object SegLabel @37
 			    Parent_View 	@36
-			    location   	(3515, 983)
+			    location   	(3333, 885)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -1445,8 +1453,8 @@
 			client     	@35
 			supplier   	@34
 			vertices   	(list Points
-			    (3654, 886)
-			    (3349, 1077))
+			    (3403, 789)
+			    (3243, 981))
 			line_style 	0)
 		    (object UseCaseView "Use Case View::修改密码" @38
 			location   	(2704, 1888)
@@ -3068,7 +3076,7 @@
 			    default_color 	TRUE)
 			stereotype 	(object SegLabel @115
 			    Parent_View 	@114
-			    location   	(3035, 1368)
+			    location   	(3007, 1325)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -3092,8 +3100,8 @@
 			client     	@34
 			supplier   	@111
 			vertices   	(list Points
-			    (3126, 1195)
-			    (2844, 1324))
+			    (3062, 1138)
+			    (2811, 1317))
 			line_style 	0)
 		    (object DependencyView "" @116
 			font       	(object Font
@@ -3445,7 +3453,7 @@
 				    (2233, 1161))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$12" @136
-			location   	(1943, 1741)
+			location   	(1932, 1775)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -3461,27 +3469,27 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$13" @137
 				Parent_View 	@136
-				location   	(1783, 829)
+				location   	(1772, 863)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5A21359A031D"
 				client     	@136
 				supplier   	@108
 				vertices   	(list Points
-				    (1943, 1741)
+				    (1932, 1775)
 				    (1764, 2181))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$14" @138
 				Parent_View 	@136
-				location   	(1783, 829)
+				location   	(1772, 863)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5A21359A031F"
 				client     	@136
 				supplier   	@126
 				vertices   	(list Points
-				    (1943, 1741)
-				    (2123, 1301))
+				    (1932, 1775)
+				    (2101, 1369))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$15" @139
 			location   	(2429, 1268)
@@ -4440,7 +4448,8 @@
 			    (2525, 2221)
 			    (2859, 2613))
 			line_style 	0)
-		    (object DependencyView "" @189
+		    (object UseCaseView "Use Case View::查看教师介绍" @189
+			location   	(3520, 1248)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -4450,9 +4459,32 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			stereotype 	(object SegLabel @190
+			label      	(object ItemLabel
 			    Parent_View 	@189
-			    location   	(2601, 1193)
+			    location   	(3520, 1386)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"查看教师介绍")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5A58F8940336"
+			height     	118)
+		    (object DependencyView "" @190
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	(object SegLabel @191
+			    Parent_View 	@190
+			    location   	(3323, 1512)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -4468,16 +4500,55 @@
 			    max_width  	450
 			    justify    	0
 			    label      	"<<extend>>"
-			    pctDist    	0.416396
-			    height     	58
+			    pctDist    	0.381877
+			    height     	38
 			    orientation 	1)
 			line_color 	3342489
-			quidu      	"5A558A5601DC"
-			client     	@34
-			supplier   	@125
+			quidu      	"5A58F8AA022A"
+			client     	@189
+			supplier   	@4
 			vertices   	(list Points
-			    (3153, 1152)
-			    (1852, 1387))
+			    (3423, 1413)
+			    (3246, 1718))
+			line_style 	0)
+		    (object DependencyView "" @192
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	(object SegLabel @193
+			    Parent_View 	@192
+			    location   	(3536, 972)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    anchor     	10
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	450
+			    justify    	0
+			    label      	"<<extend>>"
+			    pctDist    	0.456875
+			    height     	11
+			    orientation 	0)
+			line_color 	3342489
+			quidu      	"5A58F9280150"
+			client     	@35
+			supplier   	@189
+			vertices   	(list Points
+			    (3529, 789)
+			    (3520, 1189))
 			line_style 	0)))))
     root_category 	(object Class_Category "Logical View"
 	quid       	"39C9260C00D5"
@@ -4511,7 +4582,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object CategoryView "Logical View::java" @191
+		    (object CategoryView "Logical View::java" @194
 			location   	(208, 272)
 			font       	(object Font
 			    size       	10
@@ -4523,7 +4594,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@191
+			    Parent_View 	@194
 			    location   	(64, 188)
 			    nlines     	2
 			    max_width  	288
@@ -4535,7 +4606,7 @@
 			quidu      	"39C92661003B"
 			width      	300
 			height     	180)
-		    (object CategoryView "Logical View::javax" @192
+		    (object CategoryView "Logical View::javax" @195
 			location   	(656, 272)
 			font       	(object Font
 			    size       	10
@@ -4547,7 +4618,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@192
+			    Parent_View 	@195
 			    location   	(512, 188)
 			    nlines     	2
 			    max_width  	288
@@ -4559,7 +4630,7 @@
 			quidu      	"39C926610018"
 			width      	300
 			height     	180)
-		    (object CategoryView "Logical View::org" @193
+		    (object CategoryView "Logical View::org" @196
 			location   	(1104, 272)
 			font       	(object Font
 			    size       	10
@@ -4571,7 +4642,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@193
+			    Parent_View 	@196
 			    location   	(960, 188)
 			    nlines     	2
 			    max_width  	288
@@ -4592,7 +4663,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object NoteView @194
+		    (object NoteView @197
 			location   	(224, 624)
 			font       	(object Font
 			    size       	10
@@ -4607,7 +4678,7 @@
 			fill_color 	12632256
 			width      	300
 			height     	132)
-		    (object NoteView @195
+		    (object NoteView @198
 			location   	(704, 624)
 			font       	(object Font
 			    size       	10
@@ -4622,7 +4693,7 @@
 			fill_color 	8421631
 			width      	300
 			height     	132)
-		    (object NoteView @196
+		    (object NoteView @199
 			location   	(1200, 624)
 			font       	(object Font
 			    size       	10
@@ -4637,7 +4708,7 @@
 			fill_color 	12615680
 			width      	300
 			height     	132)
-		    (object NoteView @197
+		    (object NoteView @200
 			location   	(1664, 624)
 			font       	(object Font
 			    size       	10
@@ -4652,7 +4723,7 @@
 			fill_color 	16777215
 			width      	300
 			height     	132)
-		    (object Label @198
+		    (object Label @201
 			location   	(81, 369)
 			font       	(object Font
 			    size       	12
@@ -4667,7 +4738,7 @@
 			max_width  	1163
 			justify    	1
 			label      	"J2EE: Java 2 Platform, Enterprise Edition - v 1.2.1")
-		    (object Label @199
+		    (object Label @202
 			location   	(96, 608)
 			font       	(object Font
 			    size       	10
@@ -4682,7 +4753,7 @@
 			max_width  	268
 			justify    	1
 			label      	"Abstract Class")
-		    (object Label @200
+		    (object Label @203
 			location   	(592, 608)
 			font       	(object Font
 			    size       	10
@@ -4697,7 +4768,7 @@
 			max_width  	225
 			justify    	1
 			label      	"Final Class")
-		    (object Label @201
+		    (object Label @204
 			location   	(1104, 608)
 			font       	(object Font
 			    size       	10
@@ -4712,7 +4783,7 @@
 			max_width  	206
 			justify    	1
 			label      	"Interface")
-		    (object Label @202
+		    (object Label @205
 			location   	(1552, 608)
 			font       	(object Font
 			    size       	10
