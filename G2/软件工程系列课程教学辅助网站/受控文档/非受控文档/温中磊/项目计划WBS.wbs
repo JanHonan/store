@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+	<proj ListSeperator="," DefaultDurationUnits="days" DefaultWorkUnits="hours" HoursPerDay="8" HoursPerWeek="40" DaysPerMonth="22" DefaultStartTime="08:00" DefaultFinishTime="17:00" NADate="">
+		<calendar>
+			<normalhours s1="08:00" f1="12:00" s2="13:00" f2="17:00"/>
+			<dow day="sun" working="no"/>
+			<dow day="mon" working="yes"/>
+			<dow day="tue" working="yes"/>
+			<dow day="wed" working="yes"/>
+			<dow day="thu" working="yes"/>
+			<dow day="fri" working="yes"/>
+			<dow day="sat" working="no"/>
+		</calendar>
+		<currency symbol="&#163;&#164;" digits="2" positiveOrder="0" negativeOrder="2"/>
+		<summary ScheduleFromStart="yes" CalculateCostProgress="no" MultipleCriticalPaths="no" CriticalSlack="0d" Name="&#207;&#238;&#196;&#191;&#188;&#198;&#187;&#174;.mpp" Title="WBSchart1" Work="-0.0167h" Duration="85d" Start="2017-10-22T08:00" Finish="2018-01-21T17:00"/>
+		<DataSource path="C:\Users\&#206;&#194;&#193;&#185;\Desktop\&#207;&#238;&#196;&#191;&#188;&#198;&#187;&#174;.mpp" type="14.0"/>
+	</proj>
+	<printInfo mode="scale" orient="landscape" pagesWide="1" pagesHigh="1" scale="100%" bw="no" enlarge="no" byColumn="no" adjustPageBreaks="no" marginTop="36pt" marginLeft="36pt" marginBottom="36pt" marginRight="36pt"/>
+	<pageLayouts>
+		<pageLayout id="Page Layout 1" description="WBS Chart Top/Left aligned.&#13;&#10;Title field above chart with border around Title field. &#13;&#10;Border around outside pages.&#13;&#10;Page numbers upper right." SheetNumbers="yes">
+			<grid id="frame" rows="2" cols="1">
+				<row>
+					<cell field="pTitle" font-size="10pt" bold="yes" left_p="0.7pt" right_p="0.7pt" top_p="3.6pt" bottom_p="3.6pt" right_s="solid" bottom_s="solid" stretch="yes"/>
+				</row>
+				<row stretch="yes">
+					<cell field="p (Chart)" halign="left" valign="top" left_p="7.2pt" right_p="7.2pt" top_p="7.2pt" bottom_p="7.2pt" left_s="solid" right_s="solid" top_s="solid" bottom_s="solid"/>
+				</row>
+			</grid>
+			<border id="frame" bkcolor="none"/>
+		</pageLayout>
+		<pageLayout id="Page Layout 2" description="WBS Chart Top/Left aligned.&#13;&#10;Title field displayed above chart no border. &#13;&#10;Page numbers upper right." SheetNumbers="yes">
+			<grid id="frame" rows="2" cols="1" top="1">
+				<row>
+					<cell field="pTitle" font-size="10pt" bold="yes" left_p="0.7pt" right_p="0.7pt" top_p="1.45pt" bottom_p="1.45pt" stretch="yes"/>
+				</row>
+				<row stretch="yes">
+					<cell field="p (Chart)" halign="left" valign="top" left_p="7.2pt" right_p="7.2pt" top_p="7.2pt" bottom_p="7.2pt"/>
+				</row>
+			</grid>
+			<border id="frame" bkcolor="none"/>
+		</pageLayout>
+		<pageLayout id="Page Layout 3" description="WBS Chart Top/Left aligned.&#13;&#10;Title field above chart. &#13;&#10;&quot;Printed on&quot; Date in lower left corner.&#13;&#10;Border around every page.&#13;&#10;Page numbers in lower right. " BorderEveryPage="yes">
+			<grid id="frame" rows="3" cols="2">
+				<row>
+					<cell field="pTitle" font-size="10pt" bold="yes" left_p="0.7pt" right_p="0.7pt" top_p="3.6pt" bottom_p="3.6pt" left_s="solid" right_s="solid" bottom_s="solid" colspan="2" stretch="yes"/>
+				</row>
+				<row stretch="yes">
+					<cell field="p (Chart)" halign="left" valign="top" left_p="7.2pt" right_p="7.2pt" top_p="7.2pt" bottom_p="7.2pt" left_s="solid" right_s="solid" top_s="solid" bottom_s="solid" colspan="2"/>
+				</row>
+				<row>
+					<cell field="pCurrent Date" format="2" halign="left" label="Printed on: " left_p="3.6pt" right_p="3.6pt" top_p="2.15pt" bottom_p="2.15pt" top_s="solid"/>
+					<cell field="p (Page Number)" format="13" halign="right" left_p="3.6pt" right_p="3.6pt" top_p="2.15pt" bottom_p="2.15pt" top_s="solid" stretch="yes"/>
+				</row>
+			</grid>
+			<border id="frame" bkcolor="none"/>
+		</pageLayout>
+		<pageLayout id="Page Layout 4" description="WBS Chart Top/Left aligned.&#13;&#10;Title field above chart. &#13;&#10;&quot;Printed on&quot; date in lower left corner.&#13;&#10;Border around every page.&#13;&#10;Page numbers in lower right. &#13;&#10;No border around outside fields." BorderEveryPage="yes">
+			<grid id="frame" rows="3" cols="2" top="1" bottom="1">
+				<row>
+					<cell field="pTitle" font-size="10pt" bold="yes" left_p="0.7pt" right_p="0.7pt" top_p="3.6pt" bottom_p="3.6pt" colspan="2" stretch="yes"/>
+				</row>
+				<row stretch="yes">
+					<cell field="p (Chart)" halign="left" valign="top" left_p="7.2pt" right_p="7.2pt" top_p="7.2pt" bottom_p="7.2pt" colspan="2"/>
+				</row>
+				<row>
+					<cell field="pCurrent Date" format="2" halign="left" label="Printed on: " left_p="3.6pt" right_p="3.6pt" top_p="2.15pt" bottom_p="2.15pt"/>
+					<cell field="p (Page Number)" format="13" halign="right" left_p="3.6pt" right_p="3.6pt" top_p="2.15pt" bottom_p="2.15pt" stretch="yes"/>
+				</row>
+			</grid>
+			<border id="frame" bkcolor="none"/>
+		</pageLayout>
+		<pageLayout id="Page Layout 5" description="WBS Chart Top/Left aligned.&#13;&#10;Title field above chart. &#13;&#10;&quot;Printed on&quot; date in lower left corner.&#13;&#10;Company below and center.&#13;&#10;&quot;Project Completion&quot; date lower right.&#13;&#10;Page number lower left.&#13;&#10;Manager below center.&#13;&#10;CONFIDENTIAL lower right.&#13;&#10;Border around outside pages. &#13;&#10;Page numbers in upper right. " SheetNumbers="yes">
+			<grid id="frame" rows="4" cols="3">
+				<row>
+					<cell field="pTitle" font-size="10pt" bold="yes" left_p="0.7pt" right_p="0.7pt" top_p="3.6pt" bottom_p="3.6pt" left_s="solid" right_s="solid" bottom_s="solid" colspan="3" stretch="yes"/>
+				</row>
+				<row stretch="yes">
+					<cell field="p (Chart)" halign="left" valign="top" left_p="7.2pt" right_p="7.2pt" top_p="7.2pt" bottom_p="7.2pt" left_s="solid" right_s="solid" top_s="solid" bottom_s="solid" colspan="3"/>
+				</row>
+				<row>
+					<cell field="pCurrent Date" format="2" label="Printed On: " left_p="3.6pt" right_p="3.6pt" top_p="2.15pt" bottom_p="2.15pt" right_s="solid" top_s="solid" bottom_s="solid"/>
+					<cell field="pCompany" left_p="3.6pt" right_p="3.6pt" top_p="2.15pt" bottom_p="2.15pt" left_s="solid" right_s="solid" top_s="solid" bottom_s="solid" stretch="yes"/>
+					<cell field="pFinish" label="Project Completion: " left_p="3.6pt" right_p="3.6pt" top_p="3.6pt" bottom_p="3.6pt" left_s="solid" top_s="solid" bottom_s="solid" stretch="yes"/>
+				</row>
+				<row>
+					<cell field="p (Page Number)" format="13" left_p="3.6pt" right_p="3.6pt" top_p="2.15pt" bottom_p="2.15pt" right_s="solid" top_s="solid"/>
+					<cell field="pManager" left_p="3.6pt" right_p="3.6pt" top_p="2.15pt" bottom_p="2.15pt" left_s="solid" right_s="solid" top_s="solid"/>
+					<cell bold="yes" label="CONFIDENTIAL" left_p="3.6pt" right_p="3.6pt" top_p="2.15pt" bottom_p="2.15pt" left_s="solid" top_s="solid"/>
+				</row>
+			</grid>
+			<border id="frame" bkcolor="none"/>
+		</pageLayout>
+		<pageLayout id="Page Layout 6" description="WBS Chart Top/Left aligned.&#13;&#10;Title field above chart. &#13;&#10;&quot;Printed on&quot; date in lower left corner.&#13;&#10;Manager below center.&#13;&#10;CONFIDENTIAL lower right.&#13;&#10;Border around outside pages. &#13;&#10;Page numbers in upper right. " SheetNumbers="yes">
+			<grid id="frame" rows="3" cols="3" top="1" bottom="1">
+				<row>
+					<cell field="pTitle" font-size="10pt" bold="yes" left_p="0.7pt" right_p="0.7pt" top_p="3.6pt" bottom_p="3.6pt" colspan="3" stretch="yes"/>
+				</row>
+				<row stretch="yes">
+					<cell field="p (Chart)" halign="left" valign="top" left_p="7.2pt" right_p="7.2pt" top_p="7.2pt" bottom_p="7.2pt" colspan="3"/>
+				</row>
+				<row>
+					<cell field="pCurrent Date" format="2" halign="left" label="Printed on: " left_p="3.6pt" right_p="3.6pt" top_p="2.15pt" bottom_p="2.15pt"/>
+					<cell field="pManager" left_p="3.6pt" right_p="3.6pt" top_p="2.15pt" bottom_p="2.15pt" stretch="yes"/>
+					<cell halign="right" bold="yes" label="CONFIDENTIAL" left_p="3.6pt" right_p="3.6pt" top_p="2.15pt" bottom_p="2.15pt" stretch="yes"/>
+				</row>
+			</grid>
+			<border id="frame" bkcolor="none"/>
+		</pageLayout>
+		<pageLayout id="Page Layout 7" description="WBS Chart Top/Left aligned.&#13;&#10;Title field above chart with border around Title field. &#13;&#10;Border around outside pages.&#13;&#10;Legend of Fields at bottom." SheetNumbers="yes">
+			<grid id="frame" rows="3" cols="1">
+				<row>
+					<cell field="pTitle" font-size="10pt" bold="yes" left_p="0.7pt" right_p="0.7pt" top_p="3.6pt" bottom_p="3.6pt" bottom_s="solid" stretch="yes"/>
+				</row>
+				<row stretch="yes">
+					<cell field="p (Chart)" halign="left" valign="top" left_p="7.2pt" right_p="7.2pt" top_p="7.2pt" bottom_p="7.2pt" top_s="solid" bottom_s="solid"/>
+				</row>
+				<row>
+					<cell field="p (Legend: Fields)" halign="left" label="Fields" left_p="3.6pt" right_p="3.6pt" top_p="2.15pt" bottom_p="2.15pt" top_s="solid"/>
+				</row>
+			</grid>
+			<border id="frame" bkcolor="none"/>
+		</pageLayout>
+		<pageLayout id="Page Layout 8" description="WBS Chart Top/Left aligned.&#13;&#10;Title field above chart with border around Title field. &#13;&#10;Border around outside pages.&#13;&#10;Legend of Fields and Legend of Box Border styles at bottom. " SheetNumbers="yes">
+			<grid id="frame" rows="3" cols="2">
+				<row>
+					<cell field="pTitle" font-size="10pt" bold="yes" left_p="0.7pt" right_p="0.7pt" top_p="3.6pt" bottom_p="3.6pt" left_s="solid" right_s="solid" bottom_s="solid" colspan="2"/>
+				</row>
+				<row stretch="yes">
+					<cell field="p (Chart)" halign="left" valign="top" left_p="7.2pt" right_p="7.2pt" top_p="7.2pt" bottom_p="7.2pt" left_s="solid" right_s="solid" top_s="solid" bottom_s="solid" colspan="2"/>
+				</row>
+				<row>
+					<cell field="p (Legend: Fields)" label="Fields" left_p="3.6pt" right_p="3.6pt" top_p="2.15pt" bottom_p="2.15pt" top_s="solid"/>
+					<cell field="p (Legend: Borders)" format="1" halign="left" left_p="3.6pt" right_p="3.6pt" top_p="2.15pt" bottom_p="2.15pt" left_s="solid" top_s="solid" stretch="yes"/>
+				</row>
+			</grid>
+			<border id="frame" bkcolor="none"/>
+		</pageLayout>
+		<pageLayout id="Page Layout 9" description="WBS Chart Top/Left aligned.&#13;&#10;Title field above chart with border around Title field. &#13;&#10;Border around outside pages.&#13;&#10;Legend of Summary Tasks Fields, Task Fields and Legend of Box Border styles at bottom. " SheetNumbers="yes">
+			<grid id="frame" rows="3" cols="3">
+				<row>
+					<cell field="pTitle" font-size="10pt" bold="yes" left_p="0.7pt" right_p="0.7pt" top_p="3.6pt" bottom_p="3.6pt" left_s="solid" right_s="solid" bottom_s="solid" colspan="3"/>
+				</row>
+				<row stretch="yes">
+					<cell field="p (Chart)" halign="left" valign="top" left_p="7.2pt" right_p="7.2pt" top_p="7.2pt" bottom_p="7.2pt" left_s="solid" right_s="solid" top_s="solid" bottom_s="solid" colspan="3"/>
+				</row>
+				<row>
+					<cell field="p (Legend: Fields)" label="Summary Task Fields" left_p="3.6pt" right_p="3.6pt" top_p="2.15pt" bottom_p="2.15pt" top_s="solid"/>
+					<cell field="p (Legend: Fields)" format="1" label="Task Fields" left_p="3.6pt" right_p="3.6pt" top_p="2.15pt" bottom_p="2.15pt" right_s="solid" top_s="solid"/>
+					<cell field="p (Legend: Borders)" format="1" left_p="3.6pt" right_p="3.6pt" top_p="2.15pt" bottom_p="2.15pt" left_s="solid" top_s="solid" stretch="yes"/>
+				</row>
+			</grid>
+			<border id="frame" bkcolor="none"/>
+		</pageLayout>
+	</pageLayouts>
+	<views current="Planning View" current_wbs="Planning View" mode="normal">
+		<wbs_view id="Critical Path View 2" pagelayout="Page Layout 8" outlinesymbolpos="bottomcenter">
+			<item id="summary" before="14.4pt"/>
+			<item id="task" before="7.2pt" listmode="stemleft"/>
+			<border id="Critical Task" shdir="bottom_right" shdepth="3pt" shcolor="red" bkcolor="lightyellow"/>
+			<border id="Critical Milestone" shdir="bottom_right" shdepth="3pt" shcolor="red" bkcolor="lightyellow"/>
+			<border id="Critical Summary" shdir="bottom_right" shdepth="3pt" shcolor="red" bkcolor="lightyellow"/>
+			<border id="Noncritical Task" shdir="bottom_right" shdepth="3pt" shcolor="blue" bkcolor="lightyellow"/>
+			<border id="Noncritical Milestone" shdir="bottom_right" shdepth="3pt" shcolor="blue" bkcolor="lightyellow"/>
+			<border id="Noncritical Summary" shdir="bottom_right" shdepth="3pt" shcolor="blue" bkcolor="lightyellow"/>
+			<border id="External Task" shdir="bottom_right" shdepth="3pt" shcolor="gray" color="gray">
+				<border_edge id="top" color="gray"/>
+				<border_edge id="left" color="gray"/>
+				<border_edge id="bottom" color="gray"/>
+				<border_edge id="right" color="gray"/>
+			</border>
+			<grid id="summary" rows="4" cols="3" top="1">
+				<row>
+					<cell field="WBS" halign="left" bold="yes" color="red" left_p="0.7pt" right_p="0.7pt" top_p="0pt" bottom_p="0pt" colspan="3"/>
+				</row>
+				<row stretch="yes">
+					<cell field="ID" bold="yes" orient="bottomtop" bkcolor="yellow" left_p="0.7pt" right_p="0.7pt" top_p="0.7pt" bottom_p="0.7pt" right_s="solid" top_s="solid" bottom_s="solid" rowspan="3"/>
+					<cell field="Name" type="wraptext" bold="yes" left_p="3.6pt" right_p="3.6pt" top_p="1.45pt" bottom_p="1.45pt" left_s="solid" right_s="solid" bottom_s="solid" colspan="2" stretch="yes" charlen="20"/>
+				</row>
+				<row>
+					<cell field="Duration" format="5" left_p="3.6pt" right_p="3.6pt" top_p="0.7pt" bottom_p="0.7pt" left_s="solid" right_s="solid" top_s="solid" bottom_s="solid"/>
+					<cell field="% Complete" left_p="3.6pt" right_p="3.6pt" top_p="0.7pt" bottom_p="0.7pt" left_s="solid" top_s="solid" bottom_s="solid" stretch="yes"/>
+				</row>
+				<row>
+					<cell field="Start" format="1" left_p="3.6pt" right_p="3.6pt" top_p="0.7pt" bottom_p="0.7pt" left_s="solid" right_s="solid" top_s="solid"/>
+					<cell field="Finish" format="1" left_p="3.6pt" right_p="3.6pt" top_p="0.7pt" bottom_p="0.7pt" left_s="solid" top_s="solid"/>
+				</row>
+			</grid>
+			<grid id="task" rows="4" cols="3" top="1">
+				<row>
+					<cell field="WBS" halign="left" bold="yes" color="red" left_p="0.7pt" right_p="0.7pt" top_p="0pt" bottom_p="0pt" colspan="3"/>
+				</row>
+				<row stretch="yes">
+					<cell field="ID" bold="yes" orient="bottomtop" bkcolor="yellow" left_p="0.7pt" right_p="0.7pt" top_p="0.7pt" bottom_p="0.7pt" right_s="solid" top_s="solid" bottom_s="solid" rowspan="3"/>
+					<cell field="Name" type="wraptext" bold="yes" left_p="3.6pt" right_p="3.6pt" top_p="1.45pt" bottom_p="1.45pt" left_s="solid" right_s="solid" bottom_s="solid" colspan="2" stretch="yes" charlen="20"/>
+				</row>
+				<row>
+					<cell field="Duration" format="5" left_p="3.6pt" right_p="3.6pt" top_p="0.7pt" bottom_p="0.7pt" left_s="solid" right_s="solid" top_s="solid" bottom_s="solid"/>
+					<cell field="% Complete" left_p="3.6pt" right_p="3.6pt" top_p="0.7pt" bottom_p="0.7pt" left_s="solid" top_s="solid" bottom_s="solid" stretch="yes"/>
+				</row>
+				<row>
+					<cell field="Start" format="1" left_p="3.6pt" right_p="3.6pt" top_p="0.7pt" bottom_p="0.7pt" left_s="solid" right_s="solid" top_s="solid"/>
+					<cell field="Finish" format="1" left_p="3.6pt" right_p="3.6pt" top_p="0.7pt" bottom_p="0.7pt" left_s="solid" top_s="solid"/>
+				</row>
+			</grid>
+<wbs_diff>
+</wbs_diff>
+
+		</wbs_view>
+		<wbs_view id="Critical Path View" pagelayout="Page Layout 1" outlinesymbolpos="bottomcenter">
+			<item id="summary" before="14.4pt"/>
+			<item id="task" before="2.15pt" listmode="stemleft"/>
+			<border id="Critical Task" style="null" color="red" bkcolor="none">
+				<border_edge id="top" color="red"/>
+				<border_edge id="left" color="red"/>
+				<border_edge id="bottom" color="red"/>
+				<border_edge id="right" color="red"/>
+			</border>
+			<border id="Critical Milestone" style="null" color="red" bkcolor="none">
+				<border_edge id="top" color="red"/>
+				<border_edge id="left" color="red"/>
+				<border_edge id="bottom" color="red"/>
+				<border_edge id="right" color="red"/>
+			</border>
+			<border id="Critical Summary" shdir="bottom_right" shdepth="3pt" shcolor="red" bkcolor="lightyellow"/>
+			<border id="Noncritical Task" style="null" color="blue" bkcolor="none">
+				<border_edge id="top" color="blue"/>
+				<border_edge id="left" color="blue"/>
+				<border_edge id="bottom" color="blue"/>
+				<border_edge id="right" color="blue"/>
+			</border>
+			<border id="Noncritical Milestone" style="null" color="blue" bkcolor="none">
+				<border_edge id="top" color="blue"/>
+				<border_edge id="left" color="blue"/>
+				<border_edge id="bottom" color="blue"/>
+				<border_edge id="right" color="blue"/>
+			</border>
+			<border id="Noncritical Summary" shdir="bottom_right" shdepth="3pt" shcolor="blue" bkcolor="lightyellow"/>
+			<border id="External Task" style="null"/>
+			<grid id="summary" rows="1" cols="1">
+				<row>
+					<cell field="Name" type="wraptext" bold="yes" left_p="3.6pt" right_p="3.6pt" top_p="3.6pt" bottom_p="3.6pt" charlen="20"/>
+				</row>
+			</grid>
+			<grid id="task" rows="1" cols="1">
+				<row>
+					<cell field="Name" type="wraptext" halign="left" bold="yes" left_p="0.7pt" right_p="0pt" top_p="0pt" bottom_p="0pt" charlen="20"/>
+				</row>
+			</grid>
+<wbs_diff>
+</wbs_diff>
+
+		</wbs_view>
+		<wbs_view id="Flags View" pagelayout="Page Layout 8" borderpolicy="flags" outlinesymbolpos="bottomcenter">
+			<item id="summary" before="14.4pt"/>
+			<item id="task" before="10.8pt" listmode="stemleft"/>
+			<border id="Critical Task" shdir="bottom_right" shdepth="3pt" shcolor="red" bkcolor="lightyellow"/>
+			<border id="Critical Milestone" shdir="bottom_right" shdepth="3pt" shcolor="red" bkcolor="lightyellow"/>
+			<border id="Critical Summary" shdir="bottom_right" shdepth="3pt" shcolor="red" bkcolor="lightyellow"/>
+			<border id="Noncritical Task" shdir="bottom_right" shdepth="3pt" shcolor="blue" bkcolor="lightyellow"/>
+			<border id="Noncritical Milestone" shdir="bottom_right" shdepth="3pt" shcolor="blue" bkcolor="lightyellow"/>
+			<border id="Noncritical Summary" shdir="bottom_right" shdepth="3pt" shcolor="blue" bkcolor="lightyellow"/>
+			<border id="No Flag Task" bkcolor="none">
+				<border_edge id="top" bkcolor="black"/>
+				<border_edge id="left" shape="rect" depth="5.1pt" bkcolor="black"/>
+				<border_edge id="bottom" bkcolor="black"/>
+				<border_edge id="right" shape="rect" depth="5.1pt" bkcolor="black"/>
+			</border>
+			<border id="No Flag Summary" bkcolor="none">
+				<border_edge id="top" bkcolor="black"/>
+				<border_edge id="left" shape="rect" depth="5.1pt" bkcolor="black"/>
+				<border_edge id="bottom" bkcolor="black"/>
+				<border_edge id="right" shape="rect" depth="5.1pt" bkcolor="black"/>
+			</border>
+			<border id="Flag1" bkcolor="none">
+				<border_edge id="top" bkcolor="lime"/>
+				<border_edge id="left" shape="rect" depth="5.1pt" bkcolor="lime"/>
+				<border_edge id="bottom" bkcolor="lime"/>
+				<border_edge id="right" shape="rect" depth="5.1pt" bkcolor="lime"/>
+			</border>
+			<border id="Flag2" bkcolor="none">
+				<border_edge id="top" bkcolor="fuchsia"/>
+				<border_edge id="left" shape="rect" depth="5.1pt" bkcolor="fuchsia"/>
+				<border_edge id="bottom" bkcolor="fuchsia"/>
+				<border_edge id="right" shape="rect" depth="5.1pt" bkcolor="fuchsia"/>
+			</border>
+			<border id="Flag3" bkcolor="none">
+				<border_edge id="top" bkcolor="red"/>
+				<border_edge id="left" shape="rect" depth="5.1pt" bkcolor="red"/>
+				<border_edge id="bottom" bkcolor="red"/>
+				<border_edge id="right" shape="rect" depth="5.1pt" bkcolor="red"/>
+			</border>
+			<border id="Flag4" bkcolor="none">
+				<border_edge id="top" bkcolor="blue"/>
+				<border_edge id="left" shape="rect" depth="5.1pt" bkcolor="blue"/>
+				<border_edge id="bottom" bkcolor="blue"/>
+				<border_edge id="right" shape="rect" depth="5.1pt" bkcolor="blue"/>
+			</border>
+			<border id="Flag5" bkcolor="none">
+				<border_edge id="top" bkcolor="yellow"/>
+				<border_edge id="left" shape="rect" depth="5.1pt" bkcolor="yellow"/>
+				<border_edge id="bottom" bkcolor="yellow"/>
+				<border_edge id="right" shape="rect" depth="5.1pt" bkcolor="yellow"/>
+			</border>
+			<border id="Flag6" bkcolor="none">
+				<border_edge id="top" bkcolor="aqua"/>
+				<border_edge id="left" shape="rect" depth="5.1pt" bkcolor="aqua"/>
+				<border_edge id="bottom" bkcolor="aqua"/>
+				<border_edge id="right" shape="rect" depth="5.1pt" bkcolor="aqua"/>
+			</border>
+			<border id="Flag7" bkcolor="none"/>
+			<border id="Flag8" bkcolor="none"/>
+			<border id="Flag9" bkcolor="none"/>
+			<border id="Flag10" bkcolor="none"/>
+			<border id="Flag11" bkcolor="none"/>
+			<border id="Flag12" bkcolor="none"/>
+			<border id="Flag13" bkcolor="none"/>
+			<border id="Flag14" bkcolor="none"/>
+			<border id="Flag15" bkcolor="none"/>
+			<border id="Flag16" bkcolor="none"/>
+			<border id="Flag17" bkcolor="none"/>
+			<border id="Flag18" bkcolor="none"/>
+			<border id="Flag19" bkcolor="none"/>
+			<border id="Flag20" bkcolor="none"/>
+			<grid id="summary" rows="3" cols="2">
+				<row stretch="yes">
+					<cell field="Name" type="wraptext" bold="yes" left_p="3.6pt" right_p="3.6pt" top_p="1.45pt" bottom_p="1.45pt" left_s="solid" right_s="solid" bottom_s="solid" colspan="2" stretch="yes" charlen="20"/>
+				</row>
+				<row>
+					<cell field="ID" left_p="3.6pt" right_p="3.6pt" top_p="0.7pt" bottom_p="0.7pt" left_s="solid" right_s="solid" top_s="solid" bottom_s="solid"/>
+					<cell field="Duration" left_p="3.6pt" right_p="3.6pt" top_p="0.7pt" bottom_p="0.7pt" left_s="solid" top_s="solid" bottom_s="solid" stretch="yes"/>
+				</row>
+				<row>
+					<cell field="Start" format="1" left_p="3.6pt" right_p="3.6pt" top_p="0.7pt" bottom_p="0.7pt" left_s="solid" right_s="solid" top_s="solid"/>
+					<cell field="Finish" format="1" left_p="3.6pt" right_p="3.6pt" top_p="0.7pt" bottom_p="0.7pt" left_s="solid" top_s="solid"/>
+				</row>
+			</grid>
+			<grid id="task" rows="3" cols="2">
+				<row stretch="yes">
+					<cell field="Name" type="wraptext" bold="yes" left_p="3.6pt" right_p="3.6pt" top_p="1.45pt" bottom_p="1.45pt" left_s="solid" right_s="solid" bottom_s="solid" barcolor="red" colspan="2" stretch="yes" charlen="20"/>
+				</row>
+				<row>
+					<cell field="ID" left_p="3.6pt" right_p="3.6pt" top_p="0.7pt" bottom_p="0.7pt" left_s="solid" right_s="solid" top_s="solid" bottom_s="solid"/>
+					<cell field="Duration" left_p="3.6pt" right_p="3.6pt" top_p="0.7pt" bottom_p="0.7pt" left_s="solid" top_s="solid" bottom_s="solid" stretch="yes"/>
+				</row>
+				<row>
+					<cell field="Start" format="1" left_p="3.6pt" right_p="3.6pt" top_p="0.7pt" bottom_p="0.7pt" left_s="solid" right_s="solid" top_s="solid"/>
+					<cell field="Finish" format="1" left_p="3.6pt" right_p="3.6pt" top_p="0.7pt" bottom_p="0.7pt" left_s="solid" top_s="solid"/>
+				</row>
+			</grid>
+<wbs_diff>
+</wbs_diff>
+
+		</wbs_view>
+		<wbs_view id="Hours and Cost View" pagelayout="Page Layout 6" outlinesymbolpos="bottomcenter">
+			<item id="summary" before="18pt"/>
+			<item id="task" before="14.4pt" listmode="stemleft"/>
+			<border id="Critical Task" shdir="bottom_right" shdepth="3pt" shcolor="red" bkcolor="lightyellow"/>
+			<border id="Critical Milestone" shdir="bottom_right" shdepth="3pt" shcolor="red" bkcolor="lightyellow"/>
+			<border id="Critical Summary" shdir="bottom_right" shdepth="3pt" shcolor="red" bkcolor="lightyellow"/>
+			<border id="Noncritical Task" shdir="bottom_right" shdepth="3pt" shcolor="blue" bkcolor="lightyellow"/>
+			<border id="Noncritical Milestone" shdir="bottom_right" shdepth="3pt" shcolor="blue" bkcolor="lightyellow"/>
+			<border id="Noncritical Summary" shdir="bottom_right" shdepth="3pt" shcolor="blue" bkcolor="lightyellow"/>
+			<border id="External Task" shdir="bottom_right" shdepth="3pt" shcolor="gray" color="gray">
+				<border_edge id="top" color="gray"/>
+				<border_edge id="left" color="gray"/>
+				<border_edge id="bottom" color="gray"/>
+				<border_edge id="right" color="gray"/>
+			</border>
+			<grid id="summary" rows="2" cols="2">
+				<row stretch="yes">
+					<cell field="Name" type="wraptext" bold="yes" left_p="3.6pt" right_p="3.6pt" top_p="1.45pt" bottom_p="1.45pt" left_s="solid" right_s="solid" bottom_s="solid" colspan="2" charlen="25"/>
+				</row>
+				<row>
+					<cell field="Work" format="5" left_p="3.6pt" right_p="3.6pt" top_p="0.7pt" bottom_p="0.7pt" left_s="solid" right_s="solid" top_s="solid" bottom_s="solid"/>
+					<cell field="Cost" left_p="3.6pt" right_p="3.6pt" top_p="0.7pt" bottom_p="0.7pt" left_s="solid" top_s="solid" bottom_s="solid"/>
+				</row>
+			</grid>
+			<grid id="task" rows="2" cols="2">
+				<row stretch="yes">
+					<cell field="Name" type="wraptext" bold="yes" left_p="3.6pt" right_p="3.6pt" top_p="1.45pt" bottom_p="1.45pt" left_s="solid" right_s="solid" bottom_s="solid" colspan="2" charlen="25"/>
+				</row>
+				<row>
+					<cell field="Work" format="5" left_p="3.6pt" right_p="3.6pt" top_p="0.7pt" bottom_p="0.7pt" left_s="solid" right_s="solid" top_s="solid" bottom_s="solid"/>
+					<cell field="Cost" left_p="3.6pt" right_p="3.6pt" top_p="0.7pt" bottom_p="0.7pt" left_s="solid" top_s="solid" bottom_s="solid"/>
+				</row>
+			</grid>
+<wbs_diff>
+</wbs_diff>
+
+		</wbs_view>
+		<wbs_view id="Planning View 2" pagelayout="Page Layout 7" outlinesymbolpos="bottomcenter">
+			<item id="summary" drop="28.8pt" before="10.8pt"/>
+			<item id="task" before="10.8pt"/>
+			<border id="Critical Task" shdir="bottom_right" shdepth="3pt"/>
+			<border id="Critical Milestone" shdir="bottom_right" shdepth="3pt"/>
+			<border id="Critical Summary" shdir="bottom_right" shdepth="3pt"/>
+			<border id="Noncritical Task" shdir="bottom_right" shdepth="3pt"/>
+			<border id="Noncritical Milestone" shdir="bottom_right" shdepth="3pt"/>
+			<border id="Noncritical Summary" shdir="bottom_right" shdepth="3pt"/>
+			<border id="External Task" shdir="bottom_right" shdepth="3pt"/>
+			<grid id="summary" rows="3" cols="2">
+				<row stretch="yes">
+					<cell field="Name" type="wraptext" bold="yes" left_p="3.6pt" right_p="3.6pt" top_p="3.6pt" bottom_p="3.6pt" right_s="solid" bottom_s="solid" colspan="2" charlen="20"/>
+				</row>
+				<row>
+					<cell field="ID" left_p="3.6pt" right_p="3.6pt" top_p="0.7pt" bottom_p="0.7pt" right_s="solid" top_s="solid" bottom_s="solid"/>
+					<cell field="Duration" left_p="3.6pt" right_p="3.6pt" top_p="0.7pt" bottom_p="0.7pt" left_s="solid" top_s="solid" bottom_s="solid"/>
+				</row>
+				<row>
+					<cell field="Start" format="1" left_p="3.6pt" right_p="3.6pt" top_p="0.7pt" bottom_p="0.7pt" right_s="solid" top_s="solid"/>
+					<cell field="Finish" format="1" left_p="3.6pt" right_p="3.6pt" top_p="0.7pt" bottom_p="0.7pt" left_s="solid" top_s="solid"/>
+				</row>
+			</grid>
+			<grid id="task" rows="3" cols="2">
+				<row stretch="yes">
+					<cell field="Name" type="wraptext" bold="yes" left_p="3.6pt" right_p="3.6pt" top_p="3.6pt" bottom_p="3.6pt" right_s="solid" bottom_s="solid" colspan="2" charlen="20"/>
+				</row>
+				<row>
+					<cell field="ID" left_p="3.6pt" right_p="3.6pt" top_p="0.7pt" bottom_p="0.7pt" right_s="solid" top_s="solid" bottom_s="solid"/>
+					<cell field="Duration" left_p="3.6pt" right_p="3.6pt" top_p="0.7pt" bottom_p="0.7pt" left_s="solid" top_s="solid" bottom_s="solid"/>
+				</row>
+				<row>
+					<cell field="Start" format="1" left_p="3.6pt" right_p="3.6pt" top_p="0.7pt" bottom_p="0.7pt" right_s="solid" top_s="solid"/>
+					<cell field="Finish" format="1" left_p="3.6pt" right_p="3.6pt" top_p="0.7pt" bottom_p="0.7pt" left_s="solid" top_s="solid"/>
+				</row>
+			</grid>
+<wbs_diff>
+</wbs_diff>
+
+		</wbs_view>
+		<wbs_view id="Planning View" pagelayout="Page Layout 1" outlinesymbolpos="bottomcenter">
+			<item id="summary" drop="28.8pt" before="10.8pt"/>
+			<item id="task" before="10.8pt"/>
+			<border id="Critical Task" shdir="bottom_right" shdepth="3pt"/>
+			<border id="Critical Milestone" shdir="bottom_right" shdepth="3pt"/>
+			<border id="Critical Summary" shdir="bottom_right" shdepth="3pt"/>
+			<border id="Noncritical Task" shdir="bottom_right" shdepth="3pt"/>
+			<border id="Noncritical Milestone" shdir="bottom_right" shdepth="3pt"/>
+			<border id="Noncritical Summary" shdir="bottom_right" shdepth="3pt"/>
+			<border id="External Task" shdir="bottom_right" shdepth="3pt"/>
+			<grid id="summary" rows="1" cols="1">
+				<row>
+					<cell field="Name" type="wraptext" bold="yes" left_p="3.6pt" right_p="3.6pt" top_p="3.6pt" bottom_p="3.6pt" charlen="20"/>
+				</row>
+			</grid>
+			<grid id="task" rows="1" cols="1">
+				<row>
+					<cell field="Name" type="wraptext" bold="yes" left_p="3.6pt" right_p="3.6pt" top_p="3.6pt" bottom_p="3.6pt" barcolor="red" charlen="20"/>
+				</row>
+			</grid>
+<wbs_diff>
+	<treediff id="2">
+		<item calign="branch_nearest" adjust="3pt" listmode="stemleft"/>
+	</treediff>
+	<treediff id="19">
+		<item calign="branch_nearest" listmode="stemleft"/>
+	</treediff>
+</wbs_diff>
+
+		</wbs_view>
+		<wbs_view id="Progress View" pagelayout="Page Layout 8" borderpolicy="progress" outlinesymbolpos="bottomcenter">
+			<item id="summary" before="14.4pt"/>
+			<item id="task" before="7.2pt" listmode="stemleft"/>
+			<border id="Critical Task" shdir="bottom_right" shdepth="3pt" shcolor="red" bkcolor="lightyellow"/>
+			<border id="Critical Milestone" shdir="bottom_right" shdepth="3pt" shcolor="red" bkcolor="lightyellow"/>
+			<border id="Critical Summary" shdir="bottom_right" shdepth="3pt" shcolor="red" bkcolor="lightyellow"/>
+			<border id="Noncritical Task" shdir="bottom_right" shdepth="3pt" shcolor="blue" bkcolor="lightyellow"/>
+			<border id="Noncritical Milestone" shdir="bottom_right" shdepth="3pt" shcolor="blue" bkcolor="lightyellow"/>
+			<border id="Noncritical Summary" shdir="bottom_right" shdepth="3pt" shcolor="blue" bkcolor="lightyellow"/>
+			<border id="Not Started Task">
+				<border_edge id="top" shape="rect" depth="5.1pt" bkcolor="green"/>
+				<border_edge id="left" bkcolor="green"/>
+				<border_edge id="bottom" shape="rect" depth="5.1pt" bkcolor="green"/>
+				<border_edge id="right" bkcolor="green"/>
+			</border>
+			<border id="Not Started Milestone">
+				<border_edge id="top" shape="triangle" depth="5.1pt" bkcolor="green"/>
+				<border_edge id="left" bkcolor="green"/>
+				<border_edge id="bottom" shape="triangle" depth="5.1pt" bkcolor="green"/>
+				<border_edge id="right" bkcolor="green"/>
+			</border>
+			<border id="Not Started Summary">
+				<border_edge id="top" shape="rect" depth="5.1pt" bkcolor="green"/>
+				<border_edge id="left" bkcolor="green"/>
+				<border_edge id="bottom" shape="rect" depth="5.1pt" bkcolor="green"/>
+				<border_edge id="right" bkcolor="green"/>
+			</border>
+			<border id="In Progress Task">
+				<border_edge id="top" shape="rect" depth="5.1pt" bkcolor="yellow"/>
+				<border_edge id="left" bkcolor="yellow"/>
+				<border_edge id="bottom" shape="rect" depth="5.1pt" bkcolor="yellow"/>
+				<border_edge id="right" bkcolor="yellow"/>
+			</border>
+			<border id="In Progress Summary">
+				<border_edge id="top" shape="rect" depth="5.1pt" bkcolor="yellow"/>
+				<border_edge id="left" bkcolor="yellow"/>
+				<border_edge id="bottom" shape="rect" depth="5.1pt" bkcolor="yellow"/>
+				<border_edge id="right" bkcolor="yellow"/>
+			</border>
+			<border id="Completed Task">
+				<border_edge id="top" shape="rect" depth="5.1pt" bkcolor="blue"/>
+				<border_edge id="left" bkcolor="blue"/>
+				<border_edge id="bottom" shape="rect" depth="5.1pt" bkcolor="blue"/>
+				<border_edge id="right" bkcolor="blue"/>
+			</border>
+			<border id="Completed Milestone">
+				<border_edge id="top" shape="triangle" depth="5.1pt" bkcolor="blue"/>
+				<border_edge id="left" bkcolor="blue"/>
+				<border_edge id="bottom" shape="triangle" depth="5.1pt" bkcolor="blue"/>
+				<border_edge id="right" bkcolor="blue"/>
+			</border>
+			<border id="Completed Summary">
+				<border_edge id="top" shape="rect" depth="5.1pt" bkcolor="blue"/>
+				<border_edge id="left" bkcolor="blue"/>
+				<border_edge id="bottom" shape="rect" depth="5.1pt" bkcolor="blue"/>
+				<border_edge id="right" bkcolor="blue"/>
+			</border>
+			<grid id="summary" rows="2" cols="2">
+				<row stretch="yes">
+					<cell field="Name" type="wraptext" bold="yes" left_p="3.6pt" right_p="3.6pt" top_p="1.45pt" bottom_p="1.45pt" left_s="solid" right_s="solid" bottom_s="solid" colspan="2" charlen="20"/>
+				</row>
+				<row>
+					<cell field="ID" label="Id: " left_p="3.6pt" right_p="3.6pt" top_p="0.7pt" bottom_p="0.7pt" left_s="solid" right_s="solid" top_s="solid" bottom_s="solid"/>
+					<cell field="% Complete" left_p="3.6pt" right_p="3.6pt" top_p="0.7pt" bottom_p="0.7pt" left_s="solid" top_s="solid" bottom_s="solid" stretch="yes"/>
+				</row>
+			</grid>
+			<grid id="task" rows="2" cols="2">
+				<row stretch="yes">
+					<cell field="Name" type="wraptext" bold="yes" left_p="3.6pt" right_p="3.6pt" top_p="1.45pt" bottom_p="1.45pt" left_s="solid" right_s="solid" bottom_s="solid" colspan="2" charlen="20"/>
+				</row>
+				<row>
+					<cell field="ID" label="Id: " left_p="3.6pt" right_p="3.6pt" top_p="0.7pt" bottom_p="0.7pt" left_s="solid" right_s="solid" top_s="solid" bottom_s="solid"/>
+					<cell field="% Complete" left_p="3.6pt" right_p="3.6pt" top_p="0.7pt" bottom_p="0.7pt" left_s="solid" top_s="solid" bottom_s="solid" stretch="yes"/>
+				</row>
+			</grid>
+<wbs_diff>
+</wbs_diff>
+
+		</wbs_view>
+	</views>
+</project>
